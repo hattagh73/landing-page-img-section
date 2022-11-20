@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const SecInterior = () => {
     return (
-        <section className="h-screen max-w-screen-lg mx-auto">
+        <section className="h-screen max-w-screen-lg mx-auto" name="Interior">
 
             <p className="text-4xl">Section</p>
                     
