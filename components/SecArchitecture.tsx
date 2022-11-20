@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const SecArchitecture = () => {
     return (
-        <section className="h-screen max-w-screen-lg mx-auto">
+        <section className="h-screen max-w-screen-lg mx-auto" name="Architecture">
 
             <p className="text-4xl">Section</p>
                     
