@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
 
 const Header = () => {
     const [scrollPos, setScrollPos] = useState(0);
@@ -14,11 +15,19 @@ const Header = () => {
     }, [])
 
     return (
-        <header className={`sticky top-0 z-[2] bg-white transition-transform ease-linear duration-700 ${scrollPos > 90 ? 'shadow-md' : 'shadow-none'}`}>
-            <ul className={`max-w-screen-lg mx-auto flex gap-12 transition-transform ease-linear duration-700 ${scrollPos > 90 ? 'border-b-0' : 'border-b'}`}>
-                {   ['Architecture', 'Interior', 'People'].map((i, index) => 
-                    <li key={index} className={`py-4 ${i === 'Architecture' && 'border-b-2 border-grey-800' } `}>
-                        {i}
+        <header className={`sticky top-0 z-[2] bg-white transition-transform ease-linear duration-700 ${scrollPos > 200 ? 'shadow-md' : 'shadow-none'}`}>
+            <ul className={`max-w-screen-lg mx-auto flex gap-12 transition-transform ease-linear duration-700 ${scrollPos > 200 ? 'border-b-0' : 'border-b'}`}>
+                {   ['Architecture', 'Interior'].map((i, index) => 
+                    <li key={index} className="inline-flex">
+                        <Link
+                            className="py-4"
+                            activeClass="border-b-2 border-grey-800" 
+                            to={i} 
+                            smooth={true} 
+                            duration={500} 
+                            offset={i === 'Architecture' ? -300 : -70}
+                        >{i}
+                        </Link>
                     </li>
                 )}
             </ul>
