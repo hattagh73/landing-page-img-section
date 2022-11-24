@@ -20,8 +20,8 @@ const SecArchitecture = () => {
                             fill
                         />
                         <div className="group-hover:absolute z-[2] inset-0 group-hover:bg-gradient-to-b from-black/80 via-black/5 to-black/80">
-                            <div className="bg-gray-200 h-16 w-16 rounded-full"></div>
-                            <p>test</p>
+                            <div className="bg-gray-200 h-16 w-16 rounded-full">user image</div>
+                            <p>user name</p>
                         </div>
                     </div>
                 )}
