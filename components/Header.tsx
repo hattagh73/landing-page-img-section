@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-scroll/modules';
 
 const Header = () => {
     const [scrollPos, setScrollPos] = useState(0);
@@ -15,7 +15,7 @@ const Header = () => {
     }, [])
 
     return (
-        <header className={`sticky top-0 z-[2] bg-white transition-transform ease-linear duration-700 ${scrollPos > 200 ? 'shadow-md' : 'shadow-none'}`}>
+        <header className={`sticky top-0 z-[10] bg-white transition-transform ease-linear duration-700 ${scrollPos > 200 ? 'shadow-md' : 'shadow-none'}`}>
             <ul className={`max-w-screen-lg mx-auto flex gap-12 transition-transform ease-linear duration-700 ${scrollPos > 200 ? 'border-b-0' : 'border-b'}`}>
                 {   ['Architecture', 'Interior'].map((i, index) => 
                     <li key={index} className="inline-flex">
