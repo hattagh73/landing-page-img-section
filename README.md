@@ -58,26 +58,16 @@ A list of **technology stack** that we applied in this project. There are as lis
 </a>
 <!-- END Technology Stack -->
 
-<!-- START References 
-## 🔎 References
-This is a list of references that we found quite helpful in the contribution to this project.
-1. [React-Scroll](https://www.npmjs.com/package/react-scroll) 
-2. [GitHub React-Scroll](https://github.com/fisshy/react-scroll) 
-3. [Stack Overflow](https://stackoverflow.com/questions/63397911/y-scroll-event-listener-useeffect) 
- 
-<a align="right" href="#-project-title">
-  <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
-</a>
-END References -->
+<!-- START Screenshots -->
+## 📸 Screenshots
+Here are some of the screenshot outputs of the project. (**WORK IN PROGRESS**)
 
-<!-- START Videos 
-## 📽️ Videos
-Here are some of the video results of the project. 
-1. In video results: [Result 1](https://youtu.be/mkr3s0MQTy8)
+<img width="580" alt="Image results" src="https://user-images.githubusercontent.com/92319348/203851239-7b1ededc-363a-4ca0-8746-69c162eaeccf.jpg">
+
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
 </a>
-END Videos -->
+<!-- END Screenshots -->
 
 
