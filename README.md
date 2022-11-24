@@ -21,12 +21,12 @@ Here is the table of contents of our project. You may use it to explore the whol
 In this project we create a landing page with images in each section.
 
 What we have done in the recent times:
-* [x] Create rough layout of landing page.
+* [x] Design a rough layout of landing page.
 * [x] Create sticky header when scrolling down.
+* [X] Add smooth scroll from section to section.
+* [X] Add hover overlay in each image which contain user image, name etc.
 * [ ] Add a button to go to top of the page.
-* [ ] Add smooth scroll from section to section.
-* [ ] Add images in each section from using [API Unsplash](https://unsplash.com/).
-
+* [ ] Add images in each section using Unsplash API [(Documentation)](https://unsplash.com/).
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
