@@ -19,9 +19,13 @@ const SecArchitecture = () => {
                             src={`https://source.unsplash.com/1600x900/?architecture/${i}`}
                             fill
                         />
-                        <div className="group-hover:absolute z-[2] inset-0 group-hover:bg-gradient-to-b from-black/80 via-black/5 to-black/80">
-                            <div className="bg-gray-200 h-16 w-16 rounded-full">user image</div>
-                            <p>user name</p>
+                        <div 
+                            className="group-hover:block hidden absolute z-[2] inset-0 group-hover:bg-gradient-to-b from-black/70 via-black/20 to-black/70"
+                        >
+                            <div>
+                                <div className="bg-gray-200 h-12 w-12 rounded-full">user image</div>
+                                <p>user name</p>
+                            </div>
                         </div>
                     </div>
                 )}
