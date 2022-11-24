@@ -1,6 +1,6 @@
 <!-- START Project Title -->
 ## 📓 Project Title
-Design Landing Page With Images In Each Section. 
+Design Landing Page With Images In Each Section. (**WORK IN PROGRESS**)
 <!-- END Project Title -->
 
 <!-- START Table Of Contents -->
@@ -25,7 +25,7 @@ What we have done in the recent times:
 * [x] Create sticky header when scrolling down.
 * [ ] Add a button to go to top of the page.
 * [ ] Add smooth scroll from section to section.
-* [ ] Add images in each section from [Unsplash](https://unsplash.com/).
+* [ ] Add images in each section from using [API Unsplash](https://unsplash.com/).
 
 
 <a align="right" href="#-project-title">
