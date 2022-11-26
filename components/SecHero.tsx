@@ -3,7 +3,8 @@ import Image from "next/image";
     
 const SecHero = () => {
     return (
-        <section className="max-w-screen-lg mx-5 lg:mx-auto py-8 grid lg:grid-cols-3">
+        <section className="max-w-screen-lg px-6 lg:px-0 lg:mx-auto pt-14 pb-6 grid grid-cols-1 gap-y-6 lg:grid-cols-3">
+
             {/* Hero Col One */}
             <div className="col-span-2 self-center">
                 <h1 className="font-semibold text-5xl">Landing Page Of Photos By Categories</h1>
@@ -11,6 +12,7 @@ const SecHero = () => {
                     Photos are from <span className="italic underline"><a href="https://unsplash.com/">Unsplash</a></span>
                 </p>
             </div>
+
             {/* Hero Col Two */}
             <div className="lg:justify-self-end">
                 <div className="-rotate-3 bg-slate-200 w-fit p-2 rounded-md">
@@ -23,6 +25,7 @@ const SecHero = () => {
                     />
                 </div>
             </div>
+
         </section>
     )
 }

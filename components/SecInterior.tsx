@@ -1,25 +1,29 @@
-import Image from 'next/image';
+import Card from './Card';
 
 const SecInterior = () => {
     return (
-        <section className="h-screen max-w-screen-lg mx-auto" name="Interior">
 
-            <p className="text-4xl">Section</p>
-                    
-            <div className="mt-6 grid grid-cols-4 gap-7 grid-rows-[220px_220px] border">
+        //** Section Interior **//
+        <section 
+            className="max-w-screen-lg h-screen mx-auto px-6 lg:px-0" 
+            id="Interior"
+        >
+
+            {/* Title */}
+            <p className="text-base mt-4">Photos of Interior</p>
+
+            {/* Cards Container */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-7 pt-4">
                 
-                <div className="h-full relative self-center">
-                    {/* <Image
-                        className="object-cover object-center rounded-md"
-                        alt="architecture"
-                        src={i.image+'&'+index}
-                        fill
-                    /> */}
-                </div>
+                {/* Card Component */}
+                {   [1,2,3,4].map((i, index) =>
+                    <Card key={index} item={i} category="Interior"/>
+                )}
                 
             </div>
                     
         </section>
+
     )
 }
 export default SecInterior;
