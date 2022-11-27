@@ -1,11 +1,11 @@
 import Card from './Card';
 
-const SecInterior = () => {
+const SecInterior = ({interiors}) => {
     return (
 
         //** Section Interior **//
         <section 
-            className="max-w-screen-lg h-screen mx-auto px-6 lg:px-0" 
+            className="max-w-screen-lg mx-auto px-6 lg:px-0 pb-24" 
             id="Interior"
         >
 
@@ -16,8 +16,12 @@ const SecInterior = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-7 pt-4">
                 
                 {/* Card Component */}
-                {   [1,2,3,4].map((i, index) =>
-                    <Card key={index} item={i} category="Interior"/>
+                {   interiors && interiors.map(i =>
+                    <Card 
+                        key={i.id} 
+                        item={i} 
+                        category="Interiors"
+                    />
                 )}
                 
             </div>
