@@ -1,6 +1,6 @@
 import Card from './Card';
 
-const SecArchitecture = () => {
+const SecArchitecture = ({architectures}) => {
     return (
 
         //** Section Architecture **//
@@ -16,8 +16,12 @@ const SecArchitecture = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-7 pt-4">
                 
                 {/* Card Component */}
-                {   [1,2,3,4,5,6].map((i, index) =>
-                    <Card key={index} item={i} category="Architecture"/>
+                {   architectures && architectures.map(i =>
+                    <Card 
+                        key={i.id} 
+                        item={i} 
+                        category="Architecture"
+                    />
                 )}
                 
             </div>
