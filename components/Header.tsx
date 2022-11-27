@@ -5,8 +5,11 @@ import { useEffect, useState } from 'react';
 
 const Header = () => {
     const [scrollPos, setScrollPos] = useState(0);
+    const [shadow, setShadow] = useState("shadow-none");
+    const [border, setBorder] = useState("border-b");
     const [linkFont, setLinkFont] = useState('font-normal');
 
+    
     const updateScrollPos = () => {
         setScrollPos(window.pageYOffset);
     }
@@ -15,7 +18,7 @@ const Header = () => {
         window.addEventListener("scroll", (updateScrollPos));
 
         return () => window.removeEventListener("scroll", (updateScrollPos));
-    }, [])
+    }, [scrollPos])
 
     const router = useRouter();
 
@@ -32,9 +35,9 @@ const Header = () => {
     }, [router.asPath])
 
     return (
-        <header className={`px-6 lg:px-0 sticky top-0 z-[10] bg-white transition-transform ease-linear duration-700 ${scrollPos > 300 ? 'shadow-md' : 'shadow-none'}`}>
+        <header className={` px-6 lg:px-0 sticky top-0 z-[10] bg-white transition-transform ease-linear duration-700  ${scrollPos > 290 ? "shadow-md" : "shadow-none" } `}>
 
-            <ul className={`max-w-screen-lg lg:mx-auto flex gap-12 transition-transform ease-linear duration-700 ${scrollPos > 300 ? 'border-b-0' : 'border-b'}`}>
+            <ul className={` max-w-screen-lg lg:mx-auto flex gap-12 transition-transform ease-linear duration-700 ${scrollPos > 290 ? "border-b-0" : "border-b" } `}>
 
                 {   ['Architecture', 'Interior'].map((i, index) => 
 
