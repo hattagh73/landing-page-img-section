@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const Card = ({item, category}) => {
+    
     return (
         
         <div className="h-56 w-full relative self-center rounded group bg-slate-200">
@@ -9,7 +10,7 @@ const Card = ({item, category}) => {
             <Image
                 className="object-cover object-center z-[2]"
                 alt={`test`}
-                src={`https://source.unsplash.com/1600x900/?${category}/${item}`}
+                src={`${item.urls.full}`}
                 fill
             />
 
@@ -26,14 +27,28 @@ const Card = ({item, category}) => {
                             width="28"
                             height="28"
                             alt="User Profile Image"
-                            src={`https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=100`}
+                            src={item.user.profile_image.large}
                         />
                     </div>
 
                     {/* User name and info */}
-                    <div>
-                        <p className="text-white text-xs font-medium">John Doe</p>
-                        <p className="text-gray-300 text-[0.625rem]">johndoe@gmail.com</p>
+                    <div className="w-3/4">
+                        <p className="text-white text-xs font-medium">{item.user.first_name}</p>
+                        {   item.user.portfolio_url ? (
+                                <p 
+                                    className="text-gray-300 text-[0.625rem] truncate"
+                                >
+                                    <a 
+                                        rel="noreferrer" 
+                                        target="_blank" 
+                                        href={item.user.portfolio_url}
+                                    >{item.user.portfolio_url}
+                                    </a>
+                                </p>
+                            ) : (
+                                <p className="text-gray-300 text-[0.625rem]">User's portfolio not found</p>
+                            )
+                        }
                     </div>
 
                 </div>
