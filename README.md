@@ -27,10 +27,11 @@ In this project we create a landing page with images in each section.
 What we have done in the recent times:
 * [x] Design a rough layout of landing page.
 * [x] Create sticky header when scrolling down.
-* [X] Add smooth scroll from section to section.
 * [X] Add hover overlay in each image which contain user image, name etc.
+* [x] Add images in each section using Unsplash API [(Documentation)](https://unsplash.com/).
+* [x] Use Promise.all function to fetch three apis in index page.
+* [ ] Add smooth scroll from section to section.
 * [ ] Add a button to go to top of the page.
-* [ ] Add images in each section using Unsplash API [(Documentation)](https://unsplash.com/).
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
@@ -69,6 +70,7 @@ A list of **technology stack** that we applied in this project. There are as lis
 Here are some of the screenshot outputs of the project. (**WORK IN PROGRESS**)
 
 <img width="580" alt="Image results" src="https://user-images.githubusercontent.com/92319348/203851239-7b1ededc-363a-4ca0-8746-69c162eaeccf.jpg">
+<img width="580" alt="Image results" src="https://user-images.githubusercontent.com/92319348/204151896-0e0463f6-5d43-45bd-b058-478cac3c8c3b.jpg">
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
