@@ -1,8 +1,16 @@
 import { NextPage } from 'next';
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
+import { iUnsplash, iResults } from '../unsplash_type';
 import { Header, SecArchitecture, SecHero, SecInterior, SecPeople } from '../components';
 
-const Home:NextPage = ({architectures, interiors, peoples}) => {
+interface iProps {
+    architectures: iResults[]
+    interiors: iResults[]
+    peoples: iResults[]
+}
+
+const Home:NextPage<iProps>= ({architectures, interiors, peoples}) => {
     return (
         <main>
             <Head><title>Home</title></Head>
@@ -16,7 +24,7 @@ const Home:NextPage = ({architectures, interiors, peoples}) => {
 }
 export default Home;
 
-export const getServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
 
     const start = new Date().getTime();
 
@@ -26,15 +34,16 @@ export const getServerSideProps = async () => {
 
     let people = await fetch(`https://api.unsplash.com/search/photos?query=people&per_page=8&client_id=${process.env.UNSPLASH_API_KEY}`);
     
-    [architecture, interior, people] = await Promise.all([architecture.json(), interior.json(), people.json()]);
+    const [architectures, interiors, peoples] = await Promise.all([architecture.json(), interior.json(), people.json()]);
 
+    console.log(architecture)
     console.log((new Date().getTime() - start) / 1000, "seconds taken");
-    
+
     return {
         props: {
-            architectures: architecture.results,
-            interiors: interior.results,
-            peoples: people.results,
+            architectures: architectures.results,
+            interiors: interiors.results,
+            peoples: peoples.results,
         }
     }
 

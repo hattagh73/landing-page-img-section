@@ -1,6 +1,11 @@
+import { iResults } from '../unsplash_type';
 import Card from './Card';
 
-const SecPeople = ({peoples}) => {
+interface iPeoples {
+    peoples: iResults[]
+}
+
+const SecPeople = ({peoples}:iPeoples) => {
     return (
 
         //** Section Interior **//
@@ -20,7 +25,6 @@ const SecPeople = ({peoples}) => {
                     <Card 
                         key={i.id} 
                         item={i} 
-                        category="peoples"
                     />
                 )}
                 

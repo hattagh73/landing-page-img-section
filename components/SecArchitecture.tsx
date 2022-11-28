@@ -1,6 +1,11 @@
+import { iResults } from '../unsplash_type';
 import Card from './Card';
 
-const SecArchitecture = ({architectures}) => {
+interface iArchitectures {
+    architectures: iResults[]
+}
+
+const SecArchitecture = ({architectures}:iArchitectures) => {
     return (
 
         //** Section Architecture **//
@@ -19,8 +24,7 @@ const SecArchitecture = ({architectures}) => {
                 {   architectures && architectures.map(i =>
                     <Card 
                         key={i.id} 
-                        item={i} 
-                        category="Architecture"
+                        item={i}
                     />
                 )}
                 
