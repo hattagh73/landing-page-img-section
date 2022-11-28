@@ -17,7 +17,8 @@ const SecHero = () => {
             <div className="lg:justify-self-end">
                 <div className="-rotate-3 bg-slate-200 w-fit p-2 rounded-md">
                     <Image
-                        className="rounded-sm" 
+                        priority
+                        className="rounded-sm w-auto h-auto" 
                         src={`https://images.unsplash.com/photo-1470042100013-aff2a8f93778?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80`}
                         width="208"
                         height="200"
