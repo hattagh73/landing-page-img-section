@@ -28,8 +28,10 @@ What we have done in the recent times:
 * [x] Design a rough layout of landing page.
 * [x] Create sticky header when scrolling down.
 * [X] Add hover overlay in each image which contain user image, name etc.
-* [x] Add images in each section using Unsplash API [(Documentation)](https://unsplash.com/).
-* [x] Use Promise.all function to fetch three apis in index page.
+* [x] To get the access API Key, simply sign-up Unsplash account.
+* [x] Add images in each section using Unsplash API [(Documentation)](https://unsplash.com/documentation).
+* [x] Use Promise.all function to fetch multi apis in the index page/file.
+* [x] Add some typescripts in page and component.
 * [ ] Add smooth scroll from section to section.
 * [ ] Add a button to go to top of the page.
 
