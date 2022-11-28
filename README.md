@@ -13,6 +13,7 @@ Here is the table of contents of our project. You may want use it to explore the
 - [About Project](#-about-project)
 - [Technology Stack](#-technology-stack)
 - [Screenshots](#-screenshots)
+- [References](#-references)
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
@@ -25,10 +26,10 @@ Here is the table of contents of our project. You may want use it to explore the
 In this project we create a landing page with images in each section.
 
 What we have done in the recent times:
-* [x] Design a rough layout of landing page.
-* [x] Create sticky header when scrolling down.
-* [X] Add hover overlay in each image which contain user image, name etc.
-* [x] To get the access API Key, simply sign-up Unsplash account.
+* [x] Design a rough layout of a landing page, limited to desktop view only.
+* [x] Create and display a sticky header when scrolling down.
+* [X] Add hover overlay in each image that containing user image, name etc.
+* [x] To get the access API Key, simply sign-up the Unsplash account.
 * [x] Add images in each section using Unsplash API [(Documentation)](https://unsplash.com/documentation).
 * [x] Use Promise.all function to fetch multi apis in the index page/file.
 * [x] Add some typescripts in page and component.
@@ -81,4 +82,14 @@ Here are some of the screenshot outputs of the project. (**WORK IN PROGRESS**)
 <br />
 <!-- END Screenshots -->
 
+<!-- START References -->
+## 🔎 References
+This is a list of references that we found quite helpful in the contribution to this project.
+1. [Unsplash API Documentation](https://unsplash.com/documentation) 
+2. [How To Multi Fetch API](https://stackoverflow.com/questions/46241827/fetch-api-requesting-multiple-get-requests)
+ 
+<a align="right" href="#-project-title">
+  <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
+</a>
+<!-- END References -->
 
