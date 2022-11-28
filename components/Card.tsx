@@ -1,6 +1,11 @@
 import Image from "next/image";
+import { iResults } from "../unsplash_type";
 
-const Card = ({item, category}) => {
+interface iItem {
+    item: iResults
+}
+
+const Card = ({item}:iItem) => {
     
     return (
         
