@@ -39,7 +39,7 @@ const Header = () => {
 
             <ul className={` max-w-screen-lg lg:mx-auto flex gap-12 transition-transform ease-linear duration-700 ${scrollPos > 290 ? "border-b-0" : "border-b" } `}>
 
-                {   ['Architecture', 'Interior'].map((i, index) => 
+                {   ['Architecture', 'Interior', 'People'].map((i, index) => 
 
                     <li key={index} className="inline-flex">
 
