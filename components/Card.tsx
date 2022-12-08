@@ -31,8 +31,8 @@ const Card = ({item}:iItem) => {
                     {/* Rounded user image */}
                     <div className="bg-gray-200 h-7 w-7 rounded-full relative overflow-hidden border-2 border-white">
                         <Image
-                            placeholder="blur"
-                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP89h8AAvEB93wyFi8AAAAASUVORK5CYII="
+                            // placeholder="blur"
+                            // blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP89h8AAvEB93wyFi8AAAAASUVORK5CYII="
                             width="28"
                             height="28"
                             alt="User Profile Image"
