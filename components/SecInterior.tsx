@@ -11,7 +11,7 @@ const SecInterior = ({interiors}: iInteriors) => {
 
         //** Section Interior **//
         <section 
-            className="max-w-screen-lg mx-auto px-6 lg:px-0 pb-24" 
+            className="max-w-screen-lg mx-auto px-6 lg:px-0 pb-24 scroll-m-16" 
             id="Interior"
         >
 
