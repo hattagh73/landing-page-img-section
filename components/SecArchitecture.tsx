@@ -10,7 +10,7 @@ const SecArchitecture = ({architectures}:iArchitectures) => {
 
         //** Section Architecture **//
         <section 
-            className="max-w-screen-lg lg:mx-auto px-6 lg:px-0 pb-24" 
+            className="max-w-screen-lg lg:mx-auto px-6 lg:px-0 pb-24 scroll-m-20" 
             id="Architecture"
         >
 
