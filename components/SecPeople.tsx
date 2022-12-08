@@ -10,7 +10,7 @@ const SecPeople = ({peoples}:iPeoples) => {
 
         //** Section Interior **//
         <section 
-            className="max-w-screen-lg mx-auto px-6 lg:px-0 pb-24" 
+            className="max-w-screen-lg mx-auto px-6 lg:px-0 pb-24 scroll-m-0" 
             id="People"
         >
 
