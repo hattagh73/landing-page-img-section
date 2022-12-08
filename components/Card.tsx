@@ -55,7 +55,7 @@ const Card = ({item}:iItem) => {
                                     </a>
                                 </p>
                             ) : (
-                                <p className="text-gray-300 text-[0.625rem]">User's portfolio not found</p>
+                                <p className="text-gray-300 text-[0.625rem]">{`User's portfolio not found`}</p>
                             )
                         }
                     </div>
