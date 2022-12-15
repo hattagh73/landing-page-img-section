@@ -1,6 +1,6 @@
 <!-- START Project Title -->
 ## 📢 Project Title
-Design Landing Page With Images In Each Section. (**WORK IN PROGRESS**) 
+Design Landing Page With Images In Each Section.
 <br /><br />
 <!-- END Project Title -->
 
@@ -33,8 +33,7 @@ What we have done in the recent times:
 * [x] Add images in each section using Unsplash API [(Documentation)](https://unsplash.com/documentation).
 * [x] Use Promise.all function to fetch multi apis in the index page/file.
 * [x] Add some typescripts in page and component.
-* [ ] Add smooth scroll from section to section.
-* [ ] Add a button to go to top of the page.
+* [x] Add smooth scroll from section to section.
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
